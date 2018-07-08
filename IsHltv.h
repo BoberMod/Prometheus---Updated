@@ -7,7 +7,7 @@ using is_hltv_t = bool(__thiscall*)(void*);
 
 bool __fastcall hkIsHltv(void* ecx, void* edx)
 {
-    static auto ofunc = hooks::engine.get_original<is_hltv_t>(93);
+    static auto ofunc = hooks::engine.get_original<is_hltv_t>(94);
     uintptr_t pvs_entity;
     __asm
     {
