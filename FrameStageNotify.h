@@ -10,7 +10,7 @@ typedef void(__stdcall *fsn_t)(ClientFrameStage_t);
 void  __stdcall hkFrameStageNotify(ClientFrameStage_t curStage)
 {
 
-	static auto ofunc = hooks::client.get_original<fsn_t>(36);
+	static auto ofunc = hooks::client.get_original<fsn_t>(37);
 	if (g_Engine->IsConnected() && g_Engine->IsInGame())
 	{	
 		if (curStage == FRAME_NET_UPDATE_POSTDATAUPDATE_START) {
