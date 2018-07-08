@@ -1895,7 +1895,7 @@ class C_TEFireBullets
 public:
     char    pad[12];
     int		m_iPlayer; //12
-    int     m_iItemDefinitionIndex;
+    short     m_iItemDefinitionIndex;
     Vector	m_vecOrigin;
     Vector	m_vecAngles;
     int		m_iWeaponID;
